@@ -128,7 +128,7 @@ h1 {
 
 .clients {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -139,7 +139,7 @@ h1 {
 
 .client img {
     border-radius: 50%;
-    width: 75px;
+    max-width: 75px;
 }
 
 .client .text {
@@ -165,4 +165,32 @@ h1 {
 
 .gallery img {
     width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: cadetblue;
+    color: var(--dark-desat-cyan)
+}
+
+footer img {
+    color: var(--dark-desat);
+    padding: 3rem 0 0 0 ;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+}
+
+footer ul li {
+    padding: 1rem;
+}
+
+footer ul a {
+    color: var(--dark-desat-cyan);
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
 }
