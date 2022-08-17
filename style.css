@@ -72,6 +72,7 @@ h1 {
 .grid a {
     color: var(--very-dark-desat-blue);
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .grid #transform {
@@ -140,6 +141,7 @@ h1 {
 
 .client .name {
     font-weight: 700;
+    font-family: 'Fraunces', serif;
 }
 
 .client .role {
