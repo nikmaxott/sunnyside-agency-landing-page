@@ -25,6 +25,9 @@ header nav {
 header nav img {
     height: 100% !important;
 }
+header nav .menu {
+    display: none;
+}
 
 header nav ul {
     list-style: none;
@@ -48,6 +51,24 @@ h1 {
     color: var(--white);
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 450px) {
+    header nav img {
+        margin-top: 2em;
+    }
+    header nav ul {
+        display: none;
+    }
+
+    header nav .menu {
+        display: block;
+    }
+
+    header nav .menu:hover {
+        
+    }
+}
+
 
 /* MAIN GRID */
 .grid {
@@ -110,6 +131,21 @@ h1 {
     background-size: cover;
 }
 
+@media screen and (max-width: 450px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    .grid #transform {
+        grid-row: 1;
+    }    
+
+    #graphic, #design {
+        min-height: 400px;
+    }
+}
+
+
 /* TESTIMONIALS */
 
 #testimonials {
@@ -156,12 +192,30 @@ h1 {
     font-size: 0.65rem;
 }
 
-/* GALLERY */
+@media screen and (max-width:450px) {
+    #testimonials {
+        grid-column: 1;
+    }
 
+    .clients {
+        display: inline;
+    }
+}
+
+/* GALLERY */
 .gallery {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
+
+@media screen and (max-width: 450px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+        
+}
+
 
 .gallery img {
     width: 100%;
@@ -176,6 +230,10 @@ footer {
 footer img {
     color: var(--dark-desat);
     padding: 3rem 0 0 0 ;
+}
+
+footer img:hover {
+    color: var(--white);
 }
 
 footer ul {
@@ -193,4 +251,8 @@ footer ul a {
     color: var(--dark-desat-cyan);
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
+}
+
+footer ul a:hover {
+    color: var(--white)
 }
