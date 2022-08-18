@@ -2,8 +2,9 @@
 
 :root {
     --soft-red: hsl(7, 99%, 70%);
+    --soft-red-faded: hsl(7, 99%, 70%, 0.45);
     --yellow: hsl(51, 100%, 49%);
-    --dark-desat-cyan: hsl(167, 40%, 24%);
+    --yellow-faded:  hsl(51, 100%, 49%, 0.45);
     --dark-blue: hsl(198, 62%, 26%);
     --dark-cyan: hsl(168, 34%, 41%);
 
@@ -22,6 +23,7 @@ h1, h2, h3, a {
 
 h1 {
     font-size: 4rem;
+    font-weight: 900;
 }
 
 h2 {
