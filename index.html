@@ -20,7 +20,7 @@
         <li>Projects</li>
         <li>Contact</li>
       </ul>
-      <a ><img onclick="openmenu()" class="menu" src="./images/icon-hamburger.svg" ></a>
+      <img onclick="openmenu()" class="menu" src="./images/icon-hamburger.svg" >
     </nav>
 
     <h1>We are creatives</h1>
@@ -43,8 +43,6 @@
 
       </div>
       <div id="standout"></div>
-      <!-- <img id="transform" src="./images/desktop/image-transform.jpg">
-      <img id="standout" src="./images/desktop/image-stand-out.jpg"> -->
 
       <div class="standout">
         <h2>Stand out to the right audience</h2>
@@ -143,8 +141,17 @@
     } else {
       document.getElementById("menu").style.display = "none";
     }
-    
   }
+  window.onresize = resetSize; 
+  
+  function resetSize() {
+      if (document.documentElement.clientWidth >= 500) {
+        document.getElementById("menu").style.display = "flex";
+      } else {
+        document.getElementById("menu").style.display = "none";
+      }
+    }
+
 </script>
 
 </html>
