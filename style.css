@@ -64,8 +64,8 @@ h1 {
         display: block;
     }
 
-    header nav .menu:hover {
-        
+    h1 {
+        font-size: 2.25rem;
     }
 }
 
@@ -95,6 +95,22 @@ h1 {
     color: var(--very-dark-desat-blue);
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.grid .transform a {
+    text-decoration: underline solid var(--yellow-faded) 0.15em;
+}
+
+.grid .transform a:hover {
+    text-decoration-color: var(--yellow);
+}
+
+.grid .standout a {
+    text-decoration: underline solid var(--soft-red-faded) 0.15em;
+}
+
+.grid .standout a:hover {
+    text-decoration-color: var(--soft-red);
 }
 
 .grid #transform {
@@ -134,14 +150,24 @@ h1 {
 @media screen and (max-width: 450px) {
     .grid {
         grid-template-columns: 100%;
+        grid-template-rows: 100vw 100vw 100vw 100vw;
     }
 
     .grid #transform {
         grid-row: 1;
-    }    
+    }
+    
+    .grid .transform, .grid .standout {
+        text-align: center;
+        margin: 2em;
+    }
 
-    #graphic, #design {
-        min-height: 400px;
+    #photography, #graphic {
+        min-height: 450px;
+    }
+
+    #photography p, #graphic p {
+        margin: 0;
     }
 }
 
@@ -228,12 +254,12 @@ footer {
 }
 
 footer img {
-    color: var(--dark-desat);
     padding: 3rem 0 0 0 ;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(8%) saturate(2273%) hue-rotate(116deg) brightness(98%) contrast(93%);
 }
 
-footer img:hover {
-    color: var(--white);
+footer img:hover:not([src="./images/logo.svg"]) {
+    filter: brightness(100) saturate(0%)
 }
 
 footer ul {
