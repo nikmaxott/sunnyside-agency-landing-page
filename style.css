@@ -47,6 +47,12 @@ header nav ul li:last-child {
     border-radius: 50px;
 }
 
+header nav ul li:last-child:hover {
+    color: var(--white);
+    background-color: hsla(0, 0%, 91%, 0.413);
+    cursor: pointer;
+}
+
 h1 {
     color: var(--white);
     text-transform: uppercase;
