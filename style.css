@@ -56,9 +56,30 @@ h1 {
     header nav img {
         margin-top: 2em;
     }
+
+    header nav ul::before {
+        
+    }
+
     header nav ul {
         display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        left: 1rem;
+        padding: 0;
+        width: calc(100% - 2rem);
+        background-color: white;
+        color: var(--very-dark-gray-blue);
     }
+
+    header nav ul li:last-child {
+        background-color: var(--yellow);
+    }
+
 
     header nav .menu {
         display: block;

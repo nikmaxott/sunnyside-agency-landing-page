@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -16,13 +14,13 @@
 
     <nav>
       <img src="images/logo.svg">
-      <ul>
+      <ul id="menu">
         <li>About</li>
         <li>Services</li>
         <li>Projects</li>
         <li>Contact</li>
       </ul>
-      <img class="menu" src="./images/icon-hamburger.svg" >
+      <a ><img onclick="openmenu()" class="menu" src="./images/icon-hamburger.svg" ></a>
     </nav>
 
     <h1>We are creatives</h1>
@@ -136,5 +134,17 @@
   </footer>
 
 </body>
+
+<script>
+  function openmenu() {
+    console.log("open");
+    if (document.getElementById("menu").style.display !== "flex"){
+      document.getElementById("menu").style.display = "flex";
+    } else {
+      document.getElementById("menu").style.display = "none";
+    }
+    
+  }
+</script>
 
 </html>
