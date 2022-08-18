@@ -14,6 +14,8 @@
     --dark-gray-blue: hsl(232, 10%, 55%);
     --gray-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
+
+    
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
 }
@@ -24,9 +26,9 @@ h1, h2, h3, a {
 
 h1 {
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
